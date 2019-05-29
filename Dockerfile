@@ -51,6 +51,13 @@ RUN add-apt-repository -y ppa:jonathonf/python-3.6 \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN pip install --upgrade --no-cache-dir pip && pip install --no-cache-dir \
+    astor==0.7.1 \
+    audioread==2.1.6 \
+    grpcio==1.20.1 \
+    Markdown==3.1 \
+    protobuf==3.7.1 \
+    python-apt==1.6.3+ubuntu1 \
+    Werkzeug==0.15.2 \
     catboost==0.8.1.1 \
     cycler==0.10.0 \
     decorator==4.3.0 \
@@ -75,11 +82,10 @@ RUN pip install --upgrade --no-cache-dir pip && pip install --no-cache-dir \
     Shapely==1.6.4.post1 \
     six==1.11.0 \
     tqdm==4.23.4 \
-    keras \
-    tensorflow-gpu \
+    keras==2.2.4 \
+    tensorflow-gpu==1.13.1 \
     https://download.pytorch.org/whl/cu100/torch-1.1.0-cp36-cp36m-linux_x86_64.whl \
-    torchvision \
-    xgboost \
-    lightgbm \
-    librosa
-
+    torchvision==0.2.2.post3 \
+    xgboost==0.82 \
+    lightgbm==2.2.3 \
+    librosa==0.6.3 \
