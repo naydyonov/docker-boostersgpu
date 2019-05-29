@@ -89,3 +89,4 @@ RUN pip install --upgrade --no-cache-dir pip && pip install --no-cache-dir \
     xgboost==0.82 \
     lightgbm==2.2.3 \
     librosa==0.6.3 \
+    kapre==0.1.4
